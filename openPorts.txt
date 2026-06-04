@@ -1,2 +1,0 @@
-port : 135 is in use 
-port : 139 is in use 
