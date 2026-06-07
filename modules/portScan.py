@@ -35,12 +35,12 @@ class PortScanner:
         for t in tasks:
             t.join()
             
-        # with open (save_file_name , 'a') as file:  
-        #     for port in openPorts:
-        #         file.write(f"port : {port} is in use \n")     
             
+        if save_file_name != None:            
+            with open (save_file_name , 'a') as file:  
+                for port in openPorts:
+                    file.write(f"port : {port} is in use \n")     
 
-                    
-                    
+           
         return openPorts
                 
